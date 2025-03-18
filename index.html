@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css"
+
+</head>
+<body>
+
+    <h1>About me </h1>
+        <p>My name is MD Ahanaf Akif Rafid.
+        </br> I am 23 years old and currently studying abroad</br>
+          I have a deep interest in cybersecurity and aim to become a cybersecurity specialist.</br>
+           Besides my studies, I love playing the guitar in my free time.</p></p>
+        <img src="/IMG_1696 (2).jpeg" width="300px" height="300px"> 
+        <h1>
+
+    
+        <button class="btn" onclick="changeBackgroundColor()">Vibe Changer</button>
+    
+    </h1>
+    
+        <img src="myphoto.jpg" alt="Profile" class="profile-pic">
+    
+        <script>
+            
+            const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightyellow', 'lightpink', 'lightgray'];
+            let currentColorIndex = 0;  
+    
+            
+            function changeBackgroundColor() {
+                
+                document.body.style.backgroundColor = colors[currentColorIndex];
+    
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+            }
+        </script>
+    </body>
+
+</html>
